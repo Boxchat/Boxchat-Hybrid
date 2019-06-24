@@ -1,18 +1,24 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home-container">
+    <box-navbar></box-navbar>
+    <box-tabbar></box-tabbar>
+    <box-left-menu></box-left-menu>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+<style lang="scss" scoped>
+</style>
 
+
+<script>
+import BoxTabbar from "@/components/TabbarHome";
+import BoxNavbar from "@/components/Navbar";
+import BoxLeftMenu from "@/components/LeftMenu";
 export default {
-  name: 'home',
   components: {
-    HelloWorld
+    BoxTabbar,
+    BoxNavbar,
+    BoxLeftMenu
   }
 }
 </script>

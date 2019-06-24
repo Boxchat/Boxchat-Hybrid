@@ -1,4 +1,5 @@
 # boxchat-hybrid
+A Secure Private Chat Platform Powered by Hybrid.
 
 ## Project setup
 ```
