@@ -3,10 +3,17 @@
     <box-navbar></box-navbar>
     <box-tabbar></box-tabbar>
     <box-left-menu></box-left-menu>
+
+    <!-- 主功能部分 -->
+    <router-view class="main"></router-view>
+
   </div>
 </template>
 
 <style lang="scss" scoped>
+  .main {
+    margin-top: 46px;
+  }
 </style>
 
 
