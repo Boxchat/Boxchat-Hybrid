@@ -1,6 +1,10 @@
 <template>
   <div class="com-chat">
-    <chat-list></chat-list>
+    <van-pull-refresh v-model="isLoading" @refresh="onRefresh" class="refresh">
+      <chat-list></chat-list>
+      <chat-list></chat-list>
+      <chat-list></chat-list>
+    </van-pull-refresh>
   </div>
 </template>
 
@@ -15,4 +19,7 @@ export default {
 
 
 <style lang="scss" scoped>
+  .refresh {
+      height: 100vh;
+  }
 </style>

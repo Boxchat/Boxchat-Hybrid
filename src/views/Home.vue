@@ -12,7 +12,7 @@
 
 <style lang="scss" scoped>
   .main {
-    margin-top: 46px;
+    margin-top: 50px;
   }
 </style>
 
