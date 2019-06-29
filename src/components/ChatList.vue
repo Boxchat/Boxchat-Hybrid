@@ -1,35 +1,59 @@
 <template>
   <div id="chat-list">
-    <div class="header">
-      <img src="https://img.fengz.me/images/2019/06/28/GlDp.jpg" class="header-img">
-    </div>
-    <div class="msg">
-      <div class="base">
-        <div class="username">Mathon</div>
-        <div class="content">我戴不戴面罩真的雨女无瓜！小朋友就要有小朋友的亚子！</div>
+    <van-swipe-cell :right-width="80" class="swipe-cell">
+        <van-button
+          square
+          slot="right"
+          type="danger"
+          text="删除"
+          class="button--del"
+        />
+        <div class="main">
+          <div class="header">
+            <img src="https://img.fengz.me/images/2019/06/28/GlDp.jpg" class="header-img">
+          </div>
+          <div class="msg">
+            <div class="base">
+              <div class="username">Mathon</div>
+              <div class="content">我戴不戴面罩真的雨女无瓜！小朋友就要有小朋友的亚子！</div>
+            </div>
+            <div class="more">
+              <div class="time">23:59</div>
+              <div class="number"><van-tag round type="danger">99+</van-tag></div>
+            </div>
+        </div>
       </div>
-      <div class="more">
-        <div class="time">23:59</div>
-        <div class="number"><van-tag round type="danger">99+</van-tag></div>
-      </div>
-    </div>
+    </van-swipe-cell>
   </div>
 </template>
 
 <style lang="scss" scoped>
   #chat-list {
     // height: 50px;
-    height: 17.5vw;
-    display: flex;
-    padding-left: 3vw;
-    padding-right: 3vw;
     // background-color: blue;
+    display: flex;
+  }
+
+  .swipe-cell {
+    display: flex;
+    width: 100vw;
+    height: 17.5vw;
+    padding-left: 3vw;
+    // padding-right: 3vw;
+
+  }
+
+  .main {
+    // width: 100vw;
+    margin-left: 1.6vw;
+    display: flex;
   }
 
   .header {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 17.5vw;
+    width: 17.5vw;
     // background-color: green;
     justify-content:center;
   }
@@ -43,13 +67,13 @@
   }
 
   .msg {
-    margin-left: 3vw;
+    // margin-left: 3vw;
     // height: 60px;
     // width: 100%;
     // background-color: blue;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgb(218, 218, 218);
+    // border-bottom: 1px solid rgb(218, 218, 218);
   }
 
   .base {
@@ -59,6 +83,7 @@
   .more{
     width: 15vw;
     text-align: right;
+    padding-right: 3vw;
   }
 
   .username {
@@ -87,6 +112,12 @@
   .number {
     color: gray;
     font-size: 13px;
+  }
+
+  .button--del {
+    height: 100%;
+    width: 20vw;
+    right: -2.1vw;
   }
 
   // .msg-line1, .msg-line2 {
