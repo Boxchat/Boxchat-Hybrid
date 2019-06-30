@@ -53,7 +53,7 @@ export default {
 
   .swipe-cell {
     display: flex;
-    width: 85vw;
+    width: 100vw;
     height: 17.5vw;
     padding-left: 3vw;
     // padding-right: 3vw;
