@@ -10,7 +10,7 @@
         />
         <div class="main">
           <div class="header">
-            <img src="https://img.fengz.me/images/2019/06/28/GlDp.jpg" class="header-img">
+            <img :src="this.msg[this.index].user.icon" class="header-img">
             <van-tag
               class="tag"
               round
@@ -22,12 +22,16 @@
           </div>
           <div class="msg">
             <div class="base">
-              <div class="username">游乐王子</div>
-              <div class="content">我戴不戴面罩真的雨女无瓜！小朋友就要有小朋友的亚子！</div>
+              <div class="username">{{this.msg[this.index].user.names}}</div>
+              <div class="content">{{this.msg[this.index].message.content}}</div>
             </div>
             <div class="more">
-              <div class="time">23:59</div>
-              <div class="number"><van-tag round type="danger">99+</van-tag></div>
+              <div class="time">{{this.msg[this.index].message.time}}</div>
+
+              <div class="number">
+                <van-tag round type="danger" v-if="this.msg[this.index].message.number <= 99">{{this.msg[this.index].message.number}}</van-tag>
+                <van-tag round type="danger" v-else>99+</van-tag>
+              </div>
             </div>
         </div>
       </div>
@@ -37,8 +41,9 @@
 
 <script>
 export default {
-  props: ['tag'],
+  props: ['tag', 'msg', 'index'],
   created () {
+    console.log(this.msg[this.index].user.names)
   }
 }
 </script>
@@ -57,7 +62,6 @@ export default {
     height: 17.5vw;
     padding-left: 3vw;
     // padding-right: 3vw;
-
   }
 
   .tag {
@@ -87,6 +91,7 @@ export default {
     // 防止 header 因为 flex 发生变形
     flex-shrink: 0;
     border-radius: 50%;
+    border: solid 1px rgb(209, 209, 209);
   }
 
   .msg {
@@ -158,5 +163,11 @@ export default {
   //   width: 10%;
   //   background-color: green;    
   // }
+</style>
+
+<style lang="scss">
+  .van-pull-refresh__track {
+    height: 85vh;
+  }
 </style>
 
