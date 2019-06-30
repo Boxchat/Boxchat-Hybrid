@@ -26,5 +26,14 @@ npm run test
 npm run lint
 ```
 
+### Build the app to your Android device
+```
+npm run android
+```
+### Build the app to your iOS device
+```
+npm run ios
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

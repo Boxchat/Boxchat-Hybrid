@@ -11,9 +11,17 @@
 <script>
 import ChatList from '@/components/ChatList'
 export default {
+  data () {
+    return {
+      isLoading: true
+    }
+  },
+  methods: {
+    onRefresh () {},
+  }, 
   components: {
     ChatList
-  }
+  },
 }
 </script>
 

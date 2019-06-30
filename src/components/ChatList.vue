@@ -11,10 +11,18 @@
         <div class="main">
           <div class="header">
             <img src="https://img.fengz.me/images/2019/06/28/GlDp.jpg" class="header-img">
+            <van-tag
+              class="tag"
+              round
+              type="success"
+              v-if="this.tag == 'radio'"
+            >
+              Radio
+            </van-tag>
           </div>
           <div class="msg">
             <div class="base">
-              <div class="username">Mathon</div>
+              <div class="username">游乐王子</div>
               <div class="content">我戴不戴面罩真的雨女无瓜！小朋友就要有小朋友的亚子！</div>
             </div>
             <div class="more">
@@ -27,6 +35,15 @@
   </div>
 </template>
 
+<script>
+export default {
+  props: ['tag'],
+  created () {
+  }
+}
+</script>
+
+
 <style lang="scss" scoped>
   #chat-list {
     // height: 50px;
@@ -36,11 +53,17 @@
 
   .swipe-cell {
     display: flex;
-    width: 100vw;
+    width: 85vw;
     height: 17.5vw;
     padding-left: 3vw;
     // padding-right: 3vw;
 
+  }
+
+  .tag {
+    width: 27px;
+    margin-top: -2.5vh;
+    margin-left: 2vw;
   }
 
   .main {
