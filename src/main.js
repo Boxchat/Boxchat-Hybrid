@@ -9,6 +9,9 @@ import Vant from 'vant';
 import 'vant/lib/index.css';
 Vue.use(Vant);
 
+// imgcache.js
+// import imgcacheJS from 'imgcache.js'
+// Vue.use(imgcacheJS);
 
 Vue.config.productionTip = false
 
