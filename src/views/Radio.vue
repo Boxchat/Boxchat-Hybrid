@@ -92,7 +92,7 @@ export default {
   },
   components: {
     ChatList
-  }
+  },
 }
 </script>
 
