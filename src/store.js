@@ -7,7 +7,8 @@ export default new Vuex.Store({
   // 【严格模式】请在发布环境中禁用此项，以避免性能损失
   strict: true,
   state: {
-    mode_leftMenu: false
+    mode_leftMenu: false,
+    mode_isLogin: true
   },
   mutations: {
     change_leftMenu (state) {

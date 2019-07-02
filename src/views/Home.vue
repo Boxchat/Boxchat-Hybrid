@@ -26,6 +26,11 @@ export default {
     BoxTabbar,
     BoxNavbar,
     BoxLeftMenu
+  },
+  created () {
+    if (this.$store.state.mode_isLogin) {
+      location.replace (`http://${location.host}/#/chat`);
+    }
   }
 }
 </script>
