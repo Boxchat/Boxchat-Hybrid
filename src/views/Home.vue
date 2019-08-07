@@ -28,9 +28,11 @@ export default {
     BoxLeftMenu
   },
   created () {
-    if (this.$store.state.mode_isLogin) {
-      location.replace (`http://${location.host}/#/chat`);
-    }
+    // if (this.$store.state.isLogin) {
+    //   location.replace (`http://${location.host}/#/chat`);
+    // } else {
+    //   location.replace (`http://${location.host}/#/login`);      
+    // }
   }
 }
 </script>
