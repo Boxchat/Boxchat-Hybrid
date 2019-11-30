@@ -12,6 +12,10 @@
     <feature name="FileTransfer">
         <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
     </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
     <name>黑匣聊预览版</name>
     <description>
         A Secure Private Chat Platform Powered by Hybrid App.
@@ -19,7 +23,7 @@
     <author email="dev@boxchat.org" href="http://boxchat.org">
         Boxchat
     </author>
-    <content src="index.html" />
+    <content src="https://boxchat.hypin.cn" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -29,4 +33,5 @@
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="AndroidPersistentFileLocation" value="Internal" />
 </widget>

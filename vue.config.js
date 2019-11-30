@@ -13,13 +13,13 @@ module.exports = {
 
   assetsDir: './assets',
 
-  devServer: {
-    proxy: {
-      '/api': {
-        target: 'null',
-        ws: true,
-        changeOrigin: true
-      },
-    }
-  }
+  // devServer: {
+  //   proxy: {
+  //     '/api': {
+  //       target: 'null',
+  //       ws: true,
+  //       changeOrigin: true
+  //     },
+  //   }
+  // }
 }

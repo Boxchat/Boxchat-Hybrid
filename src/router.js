@@ -5,15 +5,23 @@ import Home from './views/Home.vue'
 import Chat from './views/Chat.vue'
 import Radio from './views/Radio.vue'
 import Login from './views/Login.vue'
+import LoginOld from './views/LoginOld.vue'
+import LoginScreen from './views/LoginScreen.vue'
+
 
 Vue.use(Router)
 
 const router = new Router({
-  mode: 'history',
+  // mode: 'history',
   base: process.env.BASE_URL,
   routes: [
+    // {
+    //   path: '/',
+    //   name: 'LoginScreen',
+    //   component: LoginScreen,
+    // },
     {
-      path: '/home',
+      path: '/',
       name: 'Home',
       component: Home,
       meta: {
@@ -37,7 +45,17 @@ const router = new Router({
       path: '/login',
       name: 'Login',
       component: Login,
-    }
+    },
+    {
+      path: '/loginOld',
+      name: 'LoginOld',
+      component: LoginOld,
+    },
+    // {
+    //   path: '/loginScreen',
+    //   name: 'LoginScreen',
+    //   component: LoginScreen,
+    // },
   ]
 })
 

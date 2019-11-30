@@ -12,11 +12,13 @@
     },
     "cordova-plugin-file-transfer": {
       "PACKAGE_NAME": "com.boxchat.hybrid"
-    }
-  },
-  "dependent_plugins": {
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.boxchat.hybrid"
+    },
     "cordova-plugin-file": {
       "PACKAGE_NAME": "com.boxchat.hybrid"
     }
-  }
+  },
+  "dependent_plugins": {}
 }

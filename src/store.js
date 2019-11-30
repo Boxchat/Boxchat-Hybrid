@@ -8,7 +8,7 @@ export default new Vuex.Store({
   strict: true,
   state: {
     mode_leftMenu: false,
-    isLogin: false
+    isLogin: false,
   },
   mutations: {
     change_leftMenu (state) {

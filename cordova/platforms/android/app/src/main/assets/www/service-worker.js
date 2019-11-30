@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.c98a574bc20f70681d2502ec211cb717.js"
+  "precache-manifest.3cb9a640c1d4fed3f433fa2ec17090da.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "boxchat-hybrid"});
